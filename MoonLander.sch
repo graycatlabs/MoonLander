@@ -1,0 +1,227 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:GrayCatLabs
+LIBS:MoonLander-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2900 1800 950  300 
+U 565F6D76
+F0 "PowerSupply" 60
+F1 "MoonLander_PowerSupply.sch" 60
+F2 "V_BAT" B L 2900 2000 60 
+F3 "V_EXT" I L 2900 1900 60 
+$EndSheet
+$Sheet
+S 2850 3800 1150 300 
+U 565F8ECE
+F0 "USB-Serial" 60
+F1 "MoonLander-USB-Serial.sch" 60
+F2 "USB_D+" B L 2850 4000 60 
+F3 "USB_D-" B L 2850 3900 60 
+F4 "ISP_RXD" O R 4000 4000 60 
+F5 "ISP_TXD" I R 4000 3900 60 
+$EndSheet
+$Comp
+L USB_OTG P?
+U 1 1 565F8F80
+P 1250 4000
+F 0 "P?" H 1575 3875 50  0000 C CNN
+F 1 "USB_OTG" H 1250 4200 50  0000 C CNN
+F 2 "" V 1200 3900 50  0000 C CNN
+F 3 "" V 1200 3900 50  0000 C CNN
+	1    1250 4000
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 565F8FC6
+P 1150 4750
+F 0 "#PWR?" H 1150 4500 50  0001 C CNN
+F 1 "GND" H 1150 4600 50  0000 C CNN
+F 2 "" H 1150 4750 50  0000 C CNN
+F 3 "" H 1150 4750 50  0000 C CNN
+	1    1150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4400 1150 4750
+$Comp
+L 5V_USB #PWR?
+U 1 1 565F9205
+P 2000 3050
+F 0 "#PWR?" H 2000 2900 50  0001 C CNN
+F 1 "5V_USB" H 2000 3190 50  0000 C CNN
+F 2 "" H 2000 3050 60  0000 C CNN
+F 3 "" H 2000 3050 60  0000 C CNN
+	1    2000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L FERRITE FB?
+U 1 1 565F9728
+P 2000 3450
+F 0 "FB?" H 1950 3550 60  0000 C CNN
+F 1 "FERRITE" H 2000 3350 60  0000 C CNN
+F 2 "" H 2000 3450 60  0000 C CNN
+F 3 "" H 2000 3450 60  0000 C CNN
+	1    2000 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 3800 2000 3800
+Wire Wire Line
+	2000 3050 2000 3200
+Wire Wire Line
+	2000 3800 2000 3700
+Wire Wire Line
+	1550 3900 2850 3900
+Wire Wire Line
+	2850 4000 1550 4000
+Wire Wire Line
+	1550 4200 1800 4200
+Wire Wire Line
+	1800 4200 1800 4600
+Wire Wire Line
+	1800 4600 1150 4600
+Connection ~ 1150 4600
+$Sheet
+S 4700 3550 1350 2800
+U 565F2D6A
+F0 "CPU" 60
+F1 "MoonLander_CPU.sch" 60
+F2 "ISP_RXD" B L 4700 4000 60 
+F3 "PIO0_1" B R 6050 4150 60 
+F4 "ISP_TXD" B L 4700 3900 60 
+F5 "I2C0_SCL" O R 6050 3700 60 
+F6 "I2C0_SDA" B R 6050 3800 60 
+F7 "PIO0_6_ADC_1" B R 6050 4450 60 
+F8 "PIO0_7/ADC_0" B R 6050 4550 60 
+F9 "PIO0_13/ADC_10" B R 6050 5150 60 
+F10 "PIO0_14/ADC_2" B R 6050 5250 60 
+F11 "PIO0_15" B R 6050 5350 60 
+F12 "PIO0_16" B R 6050 5450 60 
+F13 "PIO0_17/ADC_9" B R 6050 5550 60 
+F14 "PIO0_18/ADC_8" B R 6050 5650 60 
+F15 "PIO0_19/ADC_7" B R 6050 5750 60 
+F16 "PIO0_20/ADC_6" B R 6050 5850 60 
+F17 "PIO0_21/ADC_5" B R 6050 5950 60 
+F18 "PIO0_22/ADC_4" B R 6050 6050 60 
+F19 "PIO0_23/ADC_3" B R 6050 6150 60 
+F20 "PIO0_24" B R 6050 6250 60 
+$EndSheet
+$Comp
+L CONN_01X02 P?
+U 1 1 565FF581
+P 1150 2050
+F 0 "P?" H 1150 2200 50  0000 C CNN
+F 1 "CONN_01X02" V 1250 2050 50  0000 C CNN
+F 2 "" H 1150 2050 50  0000 C CNN
+F 3 "" H 1150 2050 50  0000 C CNN
+	1    1150 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 566002BE
+P 1500 2200
+F 0 "#PWR?" H 1500 1950 50  0001 C CNN
+F 1 "GND" H 1500 2050 50  0000 C CNN
+F 2 "" H 1500 2200 50  0000 C CNN
+F 3 "" H 1500 2200 50  0000 C CNN
+	1    1500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2000 1350 2000
+Wire Wire Line
+	1350 2100 1500 2100
+Wire Wire Line
+	1500 2100 1500 2200
+$Comp
+L CONN_01X02 P?
+U 1 1 56606ECB
+P 1150 1450
+F 0 "P?" H 1150 1600 50  0000 C CNN
+F 1 "CONN_01X02" V 1250 1450 50  0000 C CNN
+F 2 "" H 1150 1450 50  0000 C CNN
+F 3 "" H 1150 1450 50  0000 C CNN
+	1    1150 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56606F99
+P 1500 1600
+F 0 "#PWR?" H 1500 1350 50  0001 C CNN
+F 1 "GND" H 1500 1450 50  0000 C CNN
+F 2 "" H 1500 1600 50  0000 C CNN
+F 3 "" H 1500 1600 50  0000 C CNN
+	1    1500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1500 1500 1500
+Wire Wire Line
+	1500 1500 1500 1600
+Wire Wire Line
+	1350 1400 1950 1400
+Wire Wire Line
+	1950 1400 1950 1900
+Wire Wire Line
+	1950 1900 2900 1900
+Wire Wire Line
+	4000 3900 4700 3900
+Wire Wire Line
+	4700 4000 4000 4000
+Text Notes 750  2500 0    60   ~ 0
+Single-cell lipo battery
+Text Notes 750  1150 0    60   ~ 0
+5V DC external supply
+$Sheet
+S 7300 2800 1200 800 
+U 56609990
+F0 "Sensors" 60
+F1 "MoonLander_Sensors.sch" 60
+$EndSheet
+$EndSCHEMATC
