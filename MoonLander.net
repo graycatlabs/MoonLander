@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/ahiam/Syncany/GrayCatLabs/MoonLander/MoonLander.sch)
-    (date "Sun 06 Dec 2015 08:54:20 PM EST")
+    (date "Sun 06 Dec 2015 10:13:08 PM EST")
     (tool "Eeschema 0.201512051502+6347~38~ubuntu15.10.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -61,7 +61,7 @@
   (components
     (comp (ref P3)
       (value USB_OTG)
-      (footprint Connect:USB_Micro-B)
+      (footprint GrayCatLabs:ZX62R-B-5P)
       (libsource (lib conn) (part USB_OTG))
       (sheetpath (names /) (tstamps /))
       (tstamp 565F8F80))
