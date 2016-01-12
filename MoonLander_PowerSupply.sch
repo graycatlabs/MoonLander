@@ -78,11 +78,7 @@ F 3 "" H 1750 3600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 1950 1750 2100
-Wire Wire Line
-	1750 2100 1750 3300
-Wire Wire Line
-	1750 3300 1750 3450
+	1750 1950 1750 3450
 $Comp
 L GND #PWR7
 U 1 1 565F7639
@@ -148,20 +144,12 @@ F 3 "" H 7050 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 3400 7050 3550
+	7050 3400 7050 3650
 Wire Wire Line
-	7050 3550 7050 3650
-Wire Wire Line
-	7050 2100 7050 2500
-Wire Wire Line
-	7050 2500 7050 2900
-Wire Wire Line
-	7050 2900 7050 3100
+	7050 2100 7050 3100
 Connection ~ 7050 2900
 Wire Wire Line
-	5100 2900 5100 3300
-Wire Wire Line
-	5100 3300 5100 3500
+	5100 2900 5100 3500
 Text HLabel 4750 2500 0    60   Input ~ 0
 V_EXT
 $Comp
@@ -202,23 +190,19 @@ Wire Wire Line
 Wire Wire Line
 	7900 3050 7750 3050
 Wire Wire Line
-	7750 2900 7750 3050
+	7750 3050 7750 2900
 Connection ~ 7750 2900
 Wire Wire Line
 	8300 3200 8150 3200
 Wire Wire Line
 	8150 3200 8150 3550
 Wire Wire Line
-	7050 3550 8150 3550
-Wire Wire Line
-	8150 3550 10000 3550
+	7050 3550 10000 3550
 Connection ~ 7050 3550
 Wire Wire Line
 	9200 2900 10000 2900
 Wire Wire Line
-	10000 2750 10000 2900
-Wire Wire Line
-	10000 2900 10000 3100
+	10000 2750 10000 3100
 $Comp
 L C C4
 U 1 1 565FD299
@@ -246,15 +230,9 @@ F 3 "" H 10000 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2900 5100 2900
+	4750 2900 5950 2900
 Wire Wire Line
-	5100 2900 5950 2900
-Wire Wire Line
-	6250 2900 7050 2900
-Wire Wire Line
-	7050 2900 7750 2900
-Wire Wire Line
-	7750 2900 8300 2900
+	6250 2900 8300 2900
 Connection ~ 1750 3300
 $Comp
 L MCP73831/2 IC1
@@ -268,9 +246,7 @@ F 3 "" H 3450 3250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 3300 2350 3300
-Wire Wire Line
-	2350 3300 3000 3300
+	1750 3300 3000 3300
 Wire Wire Line
 	2350 3300 2350 3400
 Connection ~ 2350 3300
@@ -300,17 +276,13 @@ $EndComp
 Wire Wire Line
 	4650 3850 4650 3950
 Wire Wire Line
-	4150 3950 4650 3950
-Wire Wire Line
-	4650 3950 5100 3950
+	4150 3950 5100 3950
 Wire Wire Line
 	4150 3950 4150 3600
 Wire Wire Line
 	4150 3600 3950 3600
 Wire Wire Line
-	5100 3800 5100 3950
-Wire Wire Line
-	5100 3950 5100 4050
+	5100 3800 5100 4050
 Connection ~ 4650 3950
 Connection ~ 5100 3300
 $Comp
