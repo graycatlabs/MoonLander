@@ -3,7 +3,7 @@
   (general
     (links 167)
     (no_connects 0)
-    (area 129.210999 86.665999 167.207001 109.549001)
+    (area 114.530906 72.349 178.839096 118.001001)
     (thickness 1.6)
     (drawings 38)
     (tracks 384)
@@ -13,6 +13,13 @@
   )
 
   (page A4)
+  (title_block
+    (title MoonLander)
+    (rev B)
+    (company "Gray Cat Labs")
+    (comment 1 "CC BY-SA")
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
