@@ -1,4 +1,4 @@
-(kicad_pcb (version 4) (host pcbnew 0.201601091448+6432~40~ubuntu15.10.1-stable)
+(kicad_pcb (version 4) (host pcbnew 0.201601121515+6452~40~ubuntu15.10.1-stable)
 
   (general
     (links 167)
@@ -798,11 +798,6 @@
       (net 6 /PowerSupply/V_EXT))
     (pad 2 thru_hole oval (at 2.54 0 270) (size 2.032 2.032) (drill 1.016) (layers *.Cu *.Mask F.SilkS)
       (net 2 GND))
-    (model Socket_Strips.3dshapes/Socket_Strip_Straight_1x02.wrl
-      (at (xyz 0.05 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 180))
-    )
   )
 
   (module GrayCatLabs:JST-LIPO-SMT locked (layer F.Cu) (tedit 5660DB83) (tstamp 5664AF5A)
