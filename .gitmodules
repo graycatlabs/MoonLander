@@ -1,0 +1,3 @@
+[submodule "software/bootloader/cp2110"]
+	path = software/bootloader/cp2110
+	url = https://github.com/graycatlabs/cp2110-c.git
